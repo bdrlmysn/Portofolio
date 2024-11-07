@@ -1,0 +1,238 @@
+:root{
+    --primary : #F8F8F8;
+    --secondary : #FAEBCD;
+    --tertiary : #F7C873;
+    --quaternary : #434343;
+    --main-color : #383838;
+}
+
+* {
+    font-family: "Inconsolata", monospace ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: var(--main-color);
+    
+}
+
+body {
+    background-color: var(--primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* header    */
+header{
+    display: flex;
+    background-color: var(--quaternary);
+    opacity: 0.9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    /* position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+    z-index: 99999; */
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--tertiary);
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+  
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 30px;
+    right: 35px;
+}
+
+.navbar .logo{
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .logo span{
+    color : var(--primary);
+    font-style: normal;
+}
+
+
+.navbar-nav a{
+    color: var(--secondary);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    padding: 0.3rem 0.4rem;
+}
+
+.navbar-nav a:hover{
+    background-color: var(--tertiary);
+    border-radius: 25px;
+    color: var(--quaternary);
+}
+/* main */
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem 3rem;
+    padding: 5rem 2rem 0 2.8rem;
+}
+
+/* .container-main .board-name{
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.container-main .board-name h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.container-main .board-name h2{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+
+.container-main .board-name p{
+    font-weight: 300;
+}
+
+.board-name h1 span{
+    color: var(--tertiary);
+}
+
+.container-main .board-animation img{
+    width: 40rem;
+}
+
+/* About */
+.container-about{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem 3rem;
+    padding: 3rem 2.5rem 5rem;
+
+}
+
+.container-about h2,
+.contact h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.6rem 0;
+}
+
+.container-about p{
+    text-align-last: center;
+    padding: 0.2rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.container-about .teknologi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-about .teknologi .service{
+    border: var(--primary) solid;
+    width: 25rem;
+    border-radius: 20px;
+    box-shadow: #383838 20px;
+}
+
+.container-about .teknologi .service svg{
+    width: 5rem;
+}
+
+.service{
+    box-shadow: 0.1rem 0.1rem 0.1rem #c5c2c2;
+}
+
+/* Contact */
+
+.contact-main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 1rem 5rem 4rem;
+    gap: 2.5rem;
+}
+
+.form-input div{
+    margin: 1.2rem .8rem
+}
+
+.form-input input,
+.form-input textarea{
+    width: 100%;
+    padding:15px 13px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.form-input textarea{
+    height: 20vh;
+}
+
+.form-input button{
+    width: 100%;
+    background-color: var(--tertiary);
+    padding:1rem .9rem ;
+    border-radius: 10px;
+    transition: .2 ease-in-out;
+    cursor: pointer;
+}
+
+.form-input button:hover{
+    background-color: #f9bc4b;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    margin: 2rem .4rem 4rem;
+}
+
+.contact-detail .location,
+.contact-detail .email,
+.contact-detail .phone{
+    background-color: var(--tertiary);
+    width: 50px;
+    padding: .8rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer{
+    padding:3rem 0 .5rem;
+    text-align: center;
+    background-color: var(--tertiary);
+}
+
+footer .sosialMedia{
+    margin-bottom:1rem ;
+}
+
+.sosialMedia i {
+    fill: var(--quaternary);
+}

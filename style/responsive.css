@@ -1,0 +1,155 @@
+@media screen and (max-width: 1150px) {
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    .container-main .board-name h1{
+        font-size: 2rem;
+    }
+    .container-main{
+        padding-bottom: 2.25rem;
+        margin-bottom: 5.5rem;
+    }
+    .container-main .board-animation img{
+        width: 30rem;
+    }
+
+    .container-about{
+        padding: 1.45rem 2.5rem 5rem;
+    }
+
+    .container-about .teknologi{
+        gap: 1.2rem;
+    }
+
+    .container-about .teknologi .service{
+        width: 19rem;
+        height: 13rem;
+    }
+
+    .container-about h2,
+    .contact h2{
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1rem 0;
+    }
+
+    .container-about .teknologi .service p{
+        margin: 5px;
+        padding: 0 4px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 850px){
+/* Burger menu */
+.burger{
+    display: block;
+    cursor: pointer;
+    top: 10px;
+}
+
+.toggle-burger .line-1 {
+    transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.toggle-burger .line-2 {
+    opacity: 0;
+}
+
+.toggle-burger .line-3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.navbar-nav {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    padding-top: 15;
+    height: 30vh;
+    width: 100%;
+    background-color: var(--quaternary);
+    z-index: 9;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-active {
+    transform: translateY(0);
+}
+
+.container-main .board-animation img{
+    width: 25rem;
+}
+
+.navbar .logo {
+    font-size: 1.1rem;
+}
+
+.container-main .board-name h1{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.container-main .board-name h2{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.container-main .board-name p{
+    font-weight: 300;
+    font-size: .72rem;
+
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .container-main{
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        
+    }
+
+    .container-main .board-animation{
+        order: -1;
+        padding-left: 1vh;      
+    }
+    
+    
+    
+    .container-about h2,
+    .contact h2{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.2rem 0;
+    }
+
+    .container-about p{
+        font-size: 13px;
+        padding: 0;
+        text-align: justify;
+        text-align-last: center;
+        
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-main .board-animation img{
+        width: 20rem;
+    }
+
+    .contact-main{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin: 1rem 5rem 4rem;
+    }
+}
